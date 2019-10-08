@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex Pannels</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <style>
+      html {
+        box-sizing: border-box;
+        background: #ffc600;
+      }
+      body {
+        margin: 0;
+      }
+
+      .panel1 {
+        background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+      }
+      .panel2 {
+        background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+      }
+      .panel3 {
+        background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+      }
+      .panel4 {
+        background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+      }
+      .panel5 {
+        background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+      }
+      .panels {
+        display: flex;
+        overflow: hidden;
+        min-height: 100vh;
+      }
+      .panel {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1 0 auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .panel > * {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid 2px red;
+        flex: 1 0 auto;
+      }
+      .panel > *:first-child {
+        transform: translateY(-100%);
+      }
+      .panel > *:last-child {
+        transform: translateY(100%);
+      }
+    </style>
+    <div class="panels">
+      <div class="panel panel1">
+        <p>
+          HEY
+        </p>
+        <p>
+          LET'S
+        </p>
+        <p>
+          DANCE
+        </p>
+      </div>
+      <div class="panel panel2">
+        <p>GIVE</p>
+        <p>TAKE</p>
+        <p>RECEIVE</p>
+      </div>
+      <div class="panel panel3">
+        <p>EXPERIENCE</p>
+        <p>IT</p>
+        <p>TODAY</p>
+      </div>
+      <div class="panel panel4">
+        <p>GIVE</p>
+        <p>ALL</p>
+        <p>YOUCAN</p>
+      </div>
+      <div class="panel panel5">
+        <p>LIFE</p>
+        <p>IN</p>
+        <p>MOTION</p>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
